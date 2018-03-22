@@ -1,0 +1,13 @@
+dependencies:
+- name: comanage
+  repository: "file://../comanage"
+  version: 0.1.3
+- name: shibboleth-idp
+  repository: "file://../shibboleth-idp"
+  version: 0.1.0
+  alias: christminster-idp
+- name: shibboleth-idp
+  repository: "file://../shibboleth-idp"
+  version: 0.1.0
+  alias: barchester-idp
+

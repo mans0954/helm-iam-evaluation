@@ -1,0 +1,29 @@
+ingress:
+  enabled: true
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  path: /
+  hosts:
+    - comanage.tier.minikube
+    - christminster-idp.tier.minikube
+    - barchester-idp.tier.minikube
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+comanage:
+  ingress:
+    enabled: false
+  MetadataProvider: "<MetadataProvider type=\"XML\"  validate=\"false\" uri=\"http://iam-christminster-idp/idp/shibboleth\" legacyOrgNames=\"true\"/>"
+
+
+christminster-idp:
+  ingress:
+    enabled: false
+
+barchester-idp:
+  ingress:
+    enabled: false
+
