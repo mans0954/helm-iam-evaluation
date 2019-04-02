@@ -17,6 +17,7 @@ comanage:
   ingress:
     enabled: false
   MetadataProvider: "<MetadataProvider type=\"XML\"  validate=\"false\" uri=\"http://iam-christminster-idp/idp/shibboleth\" legacyOrgNames=\"true\"/>"
+  discoveryURL: http://comanage.tier.minikube/registry/pages/eds/index
 
 
 christminster-idp:
